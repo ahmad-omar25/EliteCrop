@@ -1,0 +1,771 @@
+$firstColor: #ec1c23;
+$secondColor: #08526d;
+$mainFont: 40px;
+
+// COMBAK: Start Option Box
+
+.optino-box
+{
+  position: fixed;
+  top: 110px;
+  left: 0;
+  z-index: 9999;
+  .info-us
+  {
+    float: left;
+    background: #fff;
+    color: #222;
+    padding: 10px;
+    width: 311px;
+    display: none;
+    border: 3px solid #c5c5c5;
+    p
+    {
+      margin-top: 10px;
+      margin-bottom: 1px;
+      color: #a2a2a2;
+    }
+    button
+    {
+      margin-top: 5px;
+      border: 0;
+      margin-bottom: 10px;
+      background-color: $secondColor
+    }
+    button:hover
+    {
+      @extend %hover;
+    }
+  }
+  i
+  {
+    padding: 10px;
+    color: #FFF;
+    cursor: pointer;
+    background-color: $secondColor;
+    font-size: 30px;
+    border: 2px solid #FFF;
+    margin-left: 3px
+  }
+}
+// COMBAK: End Option Box
+
+// COMBAK: Start Upper Bar
+
+.upper-bar
+{
+  background: $secondColor;
+  color: #fff;
+  .info
+  {
+    margin: 12px 0;
+    span
+    {
+      color: #bfc6c9;
+    }
+    .get-quote
+    {
+      display: inline-block;
+      border: 1px solid $firstColor;
+      padding: 2px 10px;
+      margin-left: 20px;
+    }
+  }
+}
+
+// COMBAK: End Upper Bar
+
+// COMBAK: Start Navbar
+
+.navbar-brand
+{
+   span
+  {
+    font-size: 40px;
+    &:first-child
+    {
+      color: $secondColor;
+      font-weight: bold;
+    }
+    &:last-child
+    {
+      color: $firstColor;
+    }
+  }
+}
+.navbar-nav
+{
+  .nav-link
+  {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: $secondColor;
+    font-weight: 500;
+  }
+  .active>.nav-link
+  {
+    color: $firstColor
+  }
+}
+
+// COMBAK: End Navbar
+
+// COMBAK: Start Slider
+
+.slider
+{
+  background-color: #DDD;
+  .carousel-inner
+  {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    h1
+    {
+      position: absolute;
+      color: #fff;
+      z-index: 3;
+      font-size: $mainFont + 30px;
+      max-width: 900px;
+      line-height: 1.5;
+      left: 100px;
+      span
+      {
+        background: $firstColor;
+        color: #fff;
+        display: inline-block;
+        padding: 2px 10px
+      }
+    }
+    .overlay
+    {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 2;
+    }
+  }
+  .carousel-item
+  {
+    @extend %cover;
+  }
+  .carousel-one
+  {
+    background-image: url(../img/slider/1.jpg);
+  }
+
+  .carousel-tow
+  {
+    background-image: url(../img/slider/2.jpeg);
+  }
+
+  .carousel-three
+  {
+    background-image: url(../img/slider/3.jpg);
+  }
+  .carousel-indicators li
+  {
+    height: 8px;
+    cursor: pointer;
+  }
+}
+
+// COMBAK: End Slider
+
+// COMBAK: Start Features
+
+.features
+{
+  padding: 50px 0;
+  i
+  {
+    background-color:$firstColor;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 10px
+  }
+  h3
+  {
+    color: $secondColor;
+    font-size: 24px
+  }
+  p
+  {
+    color: #9a9a9a;
+    margin-bottom: 40px
+  }
+}
+
+// COMBAK: End Features
+
+// COMBAK: Start Overview
+
+.overview
+{
+  padding: 50px 0;
+  background-color: #f0f5f7;
+  h1
+  {
+    text-transform: uppercase;
+    font-size: $mainFont;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  p
+  {
+    line-height: 2;
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    color: #6a6a6a
+  }
+  h4
+  {
+    letter-spacing: 2px;
+    font-weight: normal;
+    color: #8b8a8a;
+    margin-bottom: 40px
+  }
+  button
+  {
+    background-color: $firstColor;
+    color: #fff;
+    padding: 5px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid $firstColor;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover
+    {
+      color: #fff;
+      border: 1px solid #222;
+      @extend %transition;
+      @extend %hover;
+    }
+  }
+}
+
+// COMBAK: End Overview
+
+// COMBAK: Start Featured Work
+
+.featured-work
+{
+  padding: 100px 0;
+  h2
+  {
+    font-size: $mainFont;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  p
+  {
+    line-height: 1.6;
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    color: #6a6a6a
+  }
+  .row img
+  {
+    width: 100%
+  }
+  .row
+  {
+   flex-wrap: inherit;
+  }
+  ul
+  {
+    margin-top: 40px;
+    li
+    {
+      color: $secondColor;
+      border: 2px solid $secondColor;
+      text-transform: uppercase;
+      padding: 8px 20px;
+      margin-right: 5px;
+      margin-left: 5px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      &.active,
+      &:hover
+      {
+        background-color: $firstColor;
+        color: #fff;
+        border: 2px solid $firstColor;
+        @extend %transition;
+      }
+    }
+  }
+  .shuffle-images
+  {
+    margin-top: 25px;
+    .col-sm
+    {
+      padding: 0;
+      @extend %transition;
+    }
+    .row,
+    .row .col-sm
+    {
+      margin: 0;
+      padding: 0
+    }
+  }
+}
+
+// COMBAK: End Featured Work
+
+// COMBAK: Start Latest Post
+
+.latest-posts
+{
+  padding: 20px 0;
+  h2
+  {
+    font-size: $mainFont;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .section-desc
+  {
+    line-height: 1.6;
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+    color: #6a6a6a
+  }
+  .card
+  {
+    margin-bottom: 15px;
+    .card-title
+    {
+      font-size: 17px;
+      line-height: 1.5;
+      color: $secondColor;
+      text-transform: uppercase;
+    }
+    .card-text
+    {
+      color: #787878;
+      margin-bottom: 7px
+    }
+    .card-link
+    {
+      color: $firstColor;
+      font-weight: bold
+    }
+  }
+}
+
+// COMBAK: End Latest Post
+
+// COMBAK: Start Testimonials
+
+.testimonials
+{
+  @extend %cover;
+  background: url(../img/slider/3.jpg) no-repeat center center fixed;
+  position: relative;
+  .overlay
+  {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 2;
+  }
+  .container
+  {
+    position: relative;
+    z-index: 3
+  }
+  .carousel-caption
+  {
+    img
+    {
+      margin-bottom: 20px
+    }
+    h3
+    {
+      margin-bottom: 5px
+    }
+    span
+    {
+      margin-bottom: 30px;
+      display: inline-block;
+    }
+  }
+  .carousel-indicators li
+  {
+      height: 8px;
+      cursor: pointer;
+  }
+
+}
+.carousel-control-next,
+.carousel-control-prev
+{
+  z-index: 5
+}
+
+// COMBAK: End Testimonials
+
+// COMBAK: Start Pricing Table
+
+.pricing-table
+{
+  padding: 50px 0;
+  background-color: #f7f7f7;
+  h2
+  {
+    font-size: $mainFont;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .p-desc
+  {
+    line-height: 1.6;
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 60px;
+    color: #6a6a6a
+  }
+  .card
+  {
+    margin-bottom: 15px;
+    .card-body
+    {
+      padding: 0
+    }
+    .card-title
+    {
+      font-size: 25px;
+      line-height: 1.5;
+      color: $secondColor;
+      margin-top: 40px
+    }
+
+    .card-text
+    {
+      color: $secondColor;
+      margin-bottom: 7px;
+      padding: 10px;
+      background-color: #f7f7f7;
+      margin: 30px 0 10px;
+      font-size: 30px;
+      font-weight: bold;
+      span
+      {
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+    }
+
+  }
+  .list-group-item
+  {
+    border: none
+  }
+  .card .card-link
+  {
+    font-weight: 500;
+    padding: 4px 15px;
+    background-color: $firstColor;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 20px 0 35px;
+    &:hover
+    {
+      @extend %transition;
+      @extend %hover;
+    }
+  }
+  .card.corporate
+  {
+    top: -20px;
+    position: relative;
+    .card-text
+    {
+      background-color: $firstColor;
+      color: #fff
+    }
+    .card-link
+    {
+      background-color: $secondColor;
+      &:hover
+      {
+        @extend %transition;
+        @extend %hover;
+      }
+    }
+  }
+}
+
+// COMBAK: End Pricing Table
+
+// COMBAK: Start Why Choose Us
+
+.choose-us
+{
+  img
+  {
+    max-width: 100%
+  }
+  h2 span
+  {
+    background: $firstColor;
+    color: #fff;
+    display: inline-block;
+    padding: 2px 10px;
+    margin: 8px
+  }
+  p
+  {
+    margin: 11px;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  .choose-us-link
+  {
+    font-weight: 500;
+    padding: 4px 15px;
+    background-color: #28a745;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 45px;
+    margin-left: 8px;
+    text-decoration: none;
+    &:hover
+    {
+      @extend %transition;
+      @extend %hover;
+    }
+  }
+  .info:last-child
+  {
+    background-color: $secondColor;
+    color: #fff;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+// COMBAK: End Why Choose Us
+
+// COMBAK: Start Statistics
+
+.stats
+{
+  padding: 70px 0;
+  color: $secondColor;
+  .box
+  {
+    margin-bottom: 25px;
+    span
+    {
+      display: block;
+      font-size: 50px;
+      font-weight: bold;
+    }
+    p
+    {
+      color: $firstColor;
+      font-size: 20px;
+      font-weight: 500;
+      margin: 0;
+      margin-top: -10px;
+    }
+  }
+}
+// COMBAK: End Statistics
+
+// COMBAK: Start Contact Us
+
+.contact
+{
+  padding: 64px 0;
+  background-color: #ec1c23;
+  font-size: 22px;
+  p
+  {
+    color: #b9b0b0;
+    margin: 0
+  }
+  .contact-us-link
+  {
+    font-weight: bold;
+    padding: 4px 15px;
+    background-color: $firstColor;
+    display: inline-block;
+
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    color: #fff;
+    &:hover
+    {
+      border: 1px solid #000000;
+      @extend %transition;
+      @extend %hover;
+    }
+  }
+}
+// COMBAK: End Contact Us
+
+// COMBAK: Start Footer
+
+.footer
+{
+  padding: 70px 0;
+  .info
+  {
+    h2
+   {
+     font-size: 50px;
+     margin-bottom: 35px;
+     span:first-child
+     {
+       color: $secondColor;
+       font-weight: bold;
+     }
+     span:last-child
+     {
+       color: $firstColor;
+     }
+   }
+   p
+   {
+     line-height: 1.8;
+     color: #727272
+   }
+   i
+   {
+     margin-right: 5px;
+     font-size: 15px
+   }
+   a
+   {
+     color: $secondColor;
+     font-weight: bold;
+     font-size: 15px;
+   }
+  }
+  .helpful-links h3
+  {
+    color: $secondColor;
+    margin-bottom: 37px;
+    margin-top: 25px;
+  }
+  .con-us
+  {
+    h3
+    {
+      color: $secondColor;
+      margin-bottom: 37px;
+      margin-top: 25px;
+    }
+    ul li
+    {
+      margin-bottom: 24px
+    }
+  }
+}
+// COMBAK: End Footer
+
+// COMBAK: Start Copyright
+
+.copyright
+{
+  border-top: 1px solid #c0c0c0;
+  padding: 20px;
+  ul
+  {
+    margin: 0;
+    li
+    {
+      display: inline-block;
+      margin-left: 20px;
+      a
+      {
+        color: #777;
+        font-size: 18px
+      }
+    }
+  }
+  i:hover
+  {
+    color: $firstColor;
+    @extend %transition;
+  }
+}
+// COMBAK: End Copyright
+
+// COMBAK: Start Scroll To Top
+
+#scroll-top
+{
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  position: fixed;
+  right: 15px;
+  bottom: 10px;
+  z-index: 1999;
+  display: none;
+  cursor: pointer;
+  i
+  {
+    background-color: $secondColor;
+    padding: 0 6px;
+    border-radius: 4px;
+    color: #fff;
+    margin: -32px;
+    &:hover
+    {
+      @extend %hover;
+    }
+  }
+}
+
+// COMBAK: End Scroll To Top
+
+// COMBAK: Classes To Extend
+
+%hover
+{
+  background-color: #000000
+}
+%cover
+{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover
+}
+%transition
+{
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out
+}

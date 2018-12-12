@@ -1,0 +1,175 @@
+
+/* COMBAK: Large Screen / lg / Desktop */
+
+@media (min-width:768px) and (max-width:991px)
+{
+  .slider .carousel-inner
+  {
+    justify-content: center;
+  }
+  .slider .carousel-inner h1
+  {
+    font-size: 50px;
+    left: auto;
+  }
+  .footer .helpful-links h3, .footer .con-us h3
+  {
+    margin-bottom: 15px;
+    margin-top: 40px;
+    font-size: 25px
+  }
+  .footer .con-us ul li
+  {
+    margin-bottom: 5px
+  }
+}
+/* COMBAK: Medium Screen / md / Tablet */
+
+@media (max-width:768px)
+{
+  .slider .carousel-inner
+  {
+    justify-content: center;
+  }
+  .slider .carousel-inner h1
+  {
+    font-size: 35px;
+    max-width: 100%;
+    left: auto;
+    text-align: center;
+  }
+  .overview h1
+  {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: normal;
+  }
+  .overview p
+  {
+    width: 100%;
+  }
+  .featured-work h2
+  {
+    font-weight: normal;
+  }
+  .featured-work p
+  {
+    width: 100%;
+    line-height: 1.5;
+    font-size: 18px;
+    margin: auto;
+    margin-bottom: 20px;
+    color: #6a6a6a
+  }
+  .featured-work ul li
+  {
+    font-size: 14px;
+    padding: 8px 7px;
+  }
+  .pricing-table .card.corporate
+  {
+    top: 0;
+  }
+  .footer .helpful-links h3, .footer .con-us h3
+  {
+    margin-bottom: 15px;
+    margin-top: 40px;
+    font-size: 25px
+  }
+  .footer .con-us ul li
+  {
+    margin-bottom: 5px
+  }
+}
+
+/* COMBAK: Small Screen / sm / Phone */
+
+@media (max-width:576px)
+{
+  .upper-bar .info:first-child
+  {
+    margin-bottom: 0
+  }
+  .upper-bar .get-quote
+  {
+    border: none;
+    margin-left: 5px
+  }
+  {
+    font-size: 15px;
+    max-width: 100%;
+    left: auto;
+    text-align: center;
+  }
+
+  .overview h1
+  {
+    font-size: 27px;
+  }
+
+  .overview p
+   {
+    width: 100%;
+    font-size: 16px'
+  }
+  .testimonials .carousel-caption img
+  {
+    width: 40%;
+    margin-bottom: 5px
+  }
+  .testimonials .carousel-caption h3
+  {
+    font-size: 20px;
+  }
+  .testimonials .carousel-caption span
+  {
+    margin-bottom: 10px
+  }
+  .testimonials .carousel-caption p
+  {
+    font-size: 14px;
+    margin-bottom: 5px
+  }
+  .pricing-table h2
+  {
+    font-weight: normal;
+  }
+  .pricing-table .section-desc{
+    line-height: 1.5;
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .pricing-table .card.corporate
+  {
+    top: 0;
+  }
+  .contact p
+  {
+    font-size: 15px;
+  }
+  .contact .contact-us-link
+  {
+    font-weight: normal;
+    padding: 4px 10px;
+    font-size: 14px
+  }
+  .footer .helpful-links h3, .footer .con-us h3
+  {
+    margin-bottom: 15px;
+    margin-top: 40px;
+    font-size: 25px
+  }
+  .footer .con-us ul li
+  {
+    margin-bottom: 5px
+  }
+  .footer
+  {
+    padding: 50px 0
+  }
+  .copyright p
+  {
+    font-size: 13px;
+  }
+}
